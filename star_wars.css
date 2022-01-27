@@ -1,0 +1,64 @@
+/*In this css block, the background image and its settings are specified.
+The photo is not repeated on the page (background-repeat: no-repeat)
+,the photo is in the middle of the page (background-position: center center;)
+,it does not cause scrolling ( background-attachment: fixed;)
+,the photo covers the whole page (background-size: cover).*/
+
+body {
+    background-image: url("images/swjfo-screenshot-bd1-villains.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+/*In this css block,The style of the flex container that contains the middle rectangle is specified.
+ Its height is equal to the height of the screen (height: 100vh),
+  and justify-content: center; and align-items: center; are adjusted to place the middle rectangle (item of this container) in the middle of this container (center of the screen).*/
+.flex-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+/*In this css block,The style of the middle rectangle is specified.
+The background color is transparent with an intensity of 0.8 (background-color: rgba(255,255,255,0.8);)
+There is padding and border-radius with size 20px
+The display of this rectangle is flex.
+The row value for flex direction stacks the flex items horizontally.
+The justify-content property is used to align the flex items.
+The space-evenly value displays the flex items with equal space before, between, and after the items:
+
+*/
+.flex-container > .content-rectangle{
+    height: 82vh;
+    width: 70vw;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*left-side-of-content-rec is the class for an item for content-rectangle. This is the left part of it with height equal to its height and width equal to 45% of its width.*/
+.content-rectangle > .left-side-of-content-rec{
+    height: 100%;
+    width: 45%;
+}
+
+/*In this css block,The style of two list headers located in the middle rectangle is specified.
+text align is left and text color is black which was specified in .content-rectangle block.
+top margin is -5px and left margin is 10px
+*/
+.starships-list-header{
+    text-align: left;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+/*right-side-of-content-rec is a class of an item for content-rectangle. This is the right part of it with height equal to its height and width equal to 45% of its width.*/
+.content-rectangle > .right-side-of-content-rec{
+    height: 100%;
+    width: 45%;
+}

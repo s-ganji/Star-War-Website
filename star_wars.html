@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>star wars</title>
+    <link href="star_wars.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<!--Build the middle rectangle-->
+<!--    flex-container is container for middle page rectangle (content-page), used to place the middle rectangle in the middle of the page-->
+    <div class="flex-container">
+<!--        content rectangle is the middle rectangle on the screen that has a flex display and is divided into left(left-side-of-content-rec) and right(right-side-of-content-rec) sections-->
+        <div class="content-rectangle">
+<!--            left-side-of-content-rec is used to list the names of starships to the left of the middle rectangle.-->
+            <div class="left-side-of-content-rec">
+<!--                A JavaScript file called starships_list.js is used to list the names of starships in starships-list unordered list-->
+                <script src="starships_list.js"></script>
+                <h1 class="starships-list-header" id="1">
+                    Starships
+                </h1>
+                <ul id="starships-list">
+                    <li id="name0"></li>
+                    <li id="name1"></li>
+                    <li id="name2"></li>
+                    <li id="name3"></li>
+                    <li id="name4"></li>
+                    <li id="name5"></li>
+                    <li id="name6"></li>
+                    <li id="name7"></li>
+                    <li id="name8"></li>
+                    <li id="name9"></li>
+                </ul>
+            </div>
+
+            <!--right-side-of-content-rec is used to list detailed information about selected ship to the left of the middle rectangle.-->
+            <div class="right-side-of-content-rec">
+            <!--A JavaScript file called starships_details.js is used to list detailed information about selected ship in details-list unordered list and put the ship name in the header(ship-name-h)-->
+                <script src="starships_details.js"></script>
+                <h1 id="ship-name-h" class="starships-list-header">
+                </h1>
+                <ul id="details-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
